@@ -19,3 +19,9 @@ Useful if you have previously run the Auto-Deploy-Full-Bitcoin-Node script on a 
 Web-Interface-Full-Bitcoin-Node
 -------------------------------
 Python script to automatically update the status of a Full Bitcoin Node.
+
+Auto-Deploy-Web-Interface-Full-Bitcoin-Node
+-------------------------------------------
+Simple script to automatically deploy a Web Interface for the Full Bitcoin Node that will update every hour.
+
+        wget -O Web-Interface.sh https://github.com/mitchellcash/Full-Bitcoin-Node/raw/master/Auto-Deploy-Web-Interface-Full-Bitcoin-Node.sh ; sudo bash Web-Interface.sh
