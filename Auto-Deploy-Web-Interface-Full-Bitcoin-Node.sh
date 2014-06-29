@@ -1,6 +1,4 @@
 #!/bin/bash
-Red='\e[0;31m'
-None='\e[0m'
 echo "### Changing to bitcoind directory"
 cd ~/Bitcoin-Core/bin/64
 echo "### Stop Bitcoin Server"
@@ -24,7 +22,7 @@ echo "### Starting Bitcoin Server"
 ./bitcoind
 echo "### Changing to home directory"
 cd ~
-echo "${Red}### IN 30 SECONDS PLEASE TAKE NOTE OF RPCUSER AND RPCPASSWORD AND ONCE DONE PRESS CTRL+X (WE WILL NEED THESE SOON)${None}"
+echo "### IN 30 SECONDS PLEASE TAKE NOTE OF RPCUSER AND RPCPASSWORD AND ONCE DONE PRESS CTRL+X (WE WILL NEED THESE SOON)"
 sleep 30
 cd .bitcoin
 nano bitcoin.conf
@@ -34,7 +32,7 @@ echo "### Downloading Web-Interface.py"
 mkdir ~/Web-Interface/
 cd ~/Web-Interface/
 wget -O Web-Interface.py https://github.com/mitchellcash/Full-Bitcoin-Node/raw/master/Web-Interface-Full-Bitcoin-Node.py
-echo "${Red}### IN 30 SECONDS CONFIGURE WEB-INTERFACE.PY WITH RPC_USER, RPC_PASS, NODE_LOCATION, NODE_NAME, NODE_IP, DONATION_BTC_ADDR AND PRESS CTRL+X (DON’T FORGET TO SAVE)${None}"
+echo "### IN 30 SECONDS CONFIGURE WEB-INTERFACE.PY WITH RPC_USER, RPC_PASS, NODE_LOCATION, NODE_NAME, NODE_IP, DONATION_BTC_ADDR AND PRESS CTRL+X (DON’T FORGET TO SAVE)"
 sleep 30
 nano Web-Interface.py
 echo "### Install Web-Interface.py"
