@@ -2,7 +2,7 @@
 from bitcoinrpc.authproxy import AuthServiceProxy
 import time
 
-www_file = "/var/www/index.html"
+www_file = "/var/www/html/index.html"
 rpc_user = ""
 rpc_pass = ""
 node_location = ""
@@ -63,7 +63,7 @@ ff.write("<div id='wrap'>")
 ff.write("<h1>Bitcoin Node: " + node_ip + ":8333<br \></h1>")
 ff.write("<h3>")
 
-ff.write("Last Update: " + time.strftime("%H:%M:%S %Y-%m-%d") + "<br \>\n")
+ff.write("Last Update: " + time.strftime("%l:%M:%S %p (%z %Z) on %-d %b %Y") + "<br \>\n")
 ff.write("Connections: " + str(info['connections']) + "<br \>\n")
 ff.write("Blocks: " + str(info['blocks']) + "<br \>\n")
 ff.write("Difficulty: " + str(info['difficulty']) + "<br \>\n")
