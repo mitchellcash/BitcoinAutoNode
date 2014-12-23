@@ -27,13 +27,13 @@ randUser=`< /dev/urandom tr -dc A-Za-z0-9 | head -c30`
 randPass=`< /dev/urandom tr -dc A-Za-z0-9 | head -c30`
 echo "rpcuser=$randUser" >> $config
 echo "rpcpassword=$randPass" >> $config
-echo "### Downloading Bitcoin Core 0.9.2.1"
-wget https://bitcoin.org/bin/0.9.2.1/bitcoin-0.9.2.1-linux.tar.gz
-echo "### Installing Bitcoin Core 0.9.2.1"
+echo "### Downloading Bitcoin Core 0.9.3"
+wget https://bitcoin.org/bin/0.9.3/bitcoin-0.9.3-linux.tar.gz
+echo "### Installing Bitcoin Core 0.9.3"
 rm -f -r ~/Bitcoin-Core/
 mkdir ~/Bitcoin-Core/
-tar -xvvzf bitcoin-0.9.2.1-linux.tar.gz --directory ~/Bitcoin-Core/ --strip-components 1
-rm -f -r bitcoin-0.9.2.1-linux.tar.gz
+tar -xvvzf bitcoin-0.9.3-linux.tar.gz --directory ~/Bitcoin-Core/ --strip-components 1
+rm -f -r bitcoin-0.9.3-linux.tar.gz
 echo "### Scheduling Cron Job to run Bitcoin Core on boot"
 (crontab -l ; echo "@reboot ~/Bitcoin-Core/bin/64/./bitcoind")| crontab -
 echo "### System will now reboot"
