@@ -2,8 +2,6 @@ Full-Bitcoin-Node
 =================
 Just using this for personal use but feel free to do your thing, I welcome any and all advice. I will do my best to update the script files as soon as possible upon an update to the Bitcoin Core version.
 
-Note: I have no idea how to code so expect mistakes!
-
 Auto-Deploy-Full-Bitcoin-Node
 -----------------------------
 Simple script to automatically deploy a Full Bitcoin Node that will start bitcoind on boot.
